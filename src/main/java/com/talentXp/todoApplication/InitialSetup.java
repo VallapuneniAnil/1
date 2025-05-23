@@ -56,15 +56,15 @@ public class InitialSetup {
 			return;
 		
 		UserEntity admin = new UserEntity();
-		admin.setFirstName("gunnam");
-		admin.setLastName("chandu");
-		admin.setEmail("chandu@123gmail.com");
-		admin.setEncryptedPassword(bCryptPasswordEncoder.encode("cm@1234"));
+		admin.setFirstName("Vallapuneni");
+		admin.setLastName("Anil");
+		admin.setEmail("anilvallapuneni379gmail.com");
+		admin.setEncryptedPassword(bCryptPasswordEncoder.encode("cm@1233i334"));
 		admin.setUserId(utils.generateUserId(30));
 		admin.setRoles(Arrays.asList(adminRoleEntity));
 		
 
-		UserEntity presentEntity = usersRepository.findByEmail("chandu@123gmail.com");
+		UserEntity presentEntity = usersRepository.findByEmail("anilvallapuneni379gmail.com");
 		if(presentEntity == null)
 			usersRepository.save(admin);
 		
